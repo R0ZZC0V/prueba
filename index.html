@@ -1,0 +1,387 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buen Samaritano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../static/style/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="brand">
+                <a href="#inicio" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px;">
+                    <img src="../static/images/apreton-de-manos.png" style="width: 58px; height: 58px;">
+                    
+                    <div>
+                        <h1>Buen
+                        <h1>Samaritano</h1>
+                        <small>Conecta. Ayuda. Crece.</small>
+                    </div>
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#inicio" style="position: relative;"></a></li>
+                    <li><a href="#inicio" style="position: relative;"></a></li>
+                    <li><a href="#inicio" style="position: relative;">Inicio</a></li>
+                    <li><a href="#proyectos" style="position: relative;">Proyectos</a></li>
+                    <li><a href="#como-funciona" style="position: relative;">Cómo Funciona</a></li>
+                    <li><a href="#sobre-nosotros" style="position: relative;">Sobre Nosotros</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="nav-button verde" id="volunteer-btn">Ser Voluntario</a>
+                <a href="#" class="nav-button amarillo" id="organization-btn">Crear Organización</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Iniciar sesión ▾</button>
+                    <div class="dropdown-content">
+                        <a href="#">Con correo</a>
+                        <a href="#">Con Google</a>
+                        <a href="#">Con Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h1>Tu tiempo, tu impacto.</h1>
+                <p>Conectamos personas con causas que les apasionan. Encuentra el voluntariado perfecto para ti y empieza a cambiar el mundo.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="main-btn verde">Ser Voluntario</a>
+                    <a href="#" class="main-btn amarillo">Crear Organización</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="container">
+                <h2>Oportunidades Destacadas</h2>
+                <p class="subtitle">Descubre las oportunidades de voluntariado más populares y urgentes en El Salvador</p>
+
+                <div class="opportunities-grid">
+                    <div class="opportunity-card">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/fotos-premium/profesor-ensenando-matematicas-ninos-escuela-aula_107420-52506.jpg" alt="Profesor de Matemáticas">
+                            <span class="tag urgent">Urgente</span>
+                            <span class="tag education" style="left: auto; right: 15px;">Educación</span>
+                        </div>
+                        <div class="content">
+                            <h3>Profesor de Matemáticas para Niños</h3>
+                            <div class="organization">Fundación EducaciónSV</div>
+                            <p>Ayuda a niños a mejorar sus habilidades matemáticas básicas en comunidades vulnerables de San Salvador.</p>
+                            <div class="details">
+                                <div class="detail-item"><i class="fa-solid fa-location-dot"></i> <strong>San Salvador</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-calendar"></i> <strong>6 meses</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-clock"></i> <strong>4 horas/semana</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-users"></i> <strong>12 voluntarios</strong></div>
+                            </div>
+                            <a href="#" class="apply-btn">Aplicar Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="image-container">
+                            <img src="https://www.hacienda.gob.do/wp-content/uploads/2024/01/DSC_0415.jpg" alt="Limpieza de Playas y Costas">
+                            <span class="tag environment">Medio Ambiente</span>
+                        </div>
+                        <div class="content">
+                            <h3>Limpieza de Playas y Costas</h3>
+                            <div class="organization">EcoPlayaSV</div>
+                            <p>Participa en jornadas de limpieza de playas para proteger el ecosistema marino en la costa de La Libertad.</p>
+                            <div class="details">
+                                <div class="detail-item"><i class="fa-solid fa-location-dot"></i> <strong>La Libertad</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-calendar-day"></i> <strong>1 día</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-clock"></i> <strong>6 horas</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-users"></i> <strong>25 voluntarios</strong></div>
+                            </div>
+                            <a href="#" class="apply-btn">Aplicar Ahora</a>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="image-container">
+                            <img src="https://fvi.edu/wp-content/uploads/2023/07/20210205_010555000_iOS-2.jpg" alt="Asistente de Enfermería">
+                            <span class="tag urgent">Urgente</span>
+                            <span class="tag health" style="left: auto; right: 15px;">Salud</span>
+                        </div>
+                        <div class="content">
+                            <h3>Asistente de Enfermería</h3>
+                            <div class="organization">Hospital San Rafael</div>
+                            <p>Apoyo en tareas básicas de enfermería y acompañamiento a pacientes en el área de pediatría en Santa Tecla.</p>
+                            <div class="details">
+                                <div class="detail-item"><i class="fa-solid fa-location-dot"></i> <strong>Santa Tecla</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-calendar"></i> <strong>3 meses</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-clock"></i> <strong>8 horas/semana</strong></div>
+                                <div class="detail-item"><i class="fa-solid fa-users"></i> <strong>8 voluntarios</strong></div>
+                            </div>
+                            <a href="#" class="apply-btn">Aplicar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="view-all-btn">Ver Todas las Oportunidades</a>
+            </div>
+        </section>
+        
+        <section id="categorias">
+            <div class="container">
+                <h2>Explora Oportunidades por Categoría</h2>
+                <p class="subtitle">Encuentra el tipo de voluntariado que más se ajuste a tus intereses y habilidades</p>
+
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="icon ongs"><i class="fa-solid fa-heart"></i></div>
+                        <h3>ONGs</h3>
+                        <p>Organizaciones sin fines de lucro que trabajan por causas sociales</p>
+                        <div class="count">120+ oportunidades</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon education"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Educación Universitaria</h3>
+                        <p>Programas educativos y de investigación en universidades</p>
+                        <div class="count">85+ oportunidades</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon empresas"><i class="fa-solid fa-building"></i></div>
+                        <h3>Empresas</h3>
+                        <p>Programas de responsabilidad social corporativa</p>
+                        <div class="count">95+ oportunidades</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon environment"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Medio Ambiente</h3>
+                        <p>Proyectos de conservación y sostenibilidad</p>
+                        <div class="count">75+ oportunidades</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon health"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                        <h3>Salud y Bienestar</h3>
+                        <p>Apoyo en centros médicos, campañas de salud y asistencia a pacientes</p>
+                        <div class="count">60+ oportunidades</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="icon community"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Desarrollo Comunitario</h3>
+                        <p>Iniciativas para mejorar la calidad de vida en comunidades locales</p>
+                        <div class="count">110+ oportunidades</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="bg-light">
+            <div class="container">
+                <h2>¿Cómo Funciona?</h2>
+                <p class="subtitle">Es fácil empezar tu camino como voluntario. Sigue estos simples pasos para unirte a la causa.</p>
+
+                <div class="how-it-works-grid">
+                    <div class="step-card">
+                        <div class="number-circle n1">1</div>
+                        <h3>Encuentra</h3>
+                        <p>Explora cientos de oportunidades de voluntariado por categoría, ubicación o causa.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="number-circle n2">2</div>
+                        <h3>Aplica</h3>
+                        <p>Envía tu solicitud directamente a las organizaciones con solo unos clics.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="number-circle n3">3</div>
+                        <h3>Conecta</h3>
+                        <p>Una vez aceptado, la organización se pondrá en contacto para coordinar los detalles.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="number-circle n4">4</div>
+                        <h3>Impacta</h3>
+                        <p>Participa en la actividad, conoce a otros voluntarios y haz una diferencia real.</p>
+                    </div>
+                </div>
+
+                <div class="community-stats">
+                    <div class="stat-item">
+                        <div class="number">2.5K+</div>
+                        <div class="label">Voluntarios Activos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number orange">500+</div>
+                        <div class="label">Organizaciones Asociadas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number red">1.8K+</div>
+                        <div class="label">Proyectos Finalizados</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p class="subtitle">Conoce nuestra historia y por qué nos apasiona conectar a las personas con causas que importan.</p>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="mission"><i class="fa-solid fa-flag"></i> Nuestra Misión</h3>
+                        <p>
+                            Nuestra misión es empoderar a la comunidad salvadoreña, facilitando el acceso a oportunidades de voluntariado y fortaleciendo a las organizaciones que trabajan por un futuro mejor. Creemos que cada persona tiene el poder de generar un cambio positivo.
+                        </p>
+                        <h3 class="vision"><i class="fa-solid fa-eye"></i> Nuestra Visión</h3>
+                        <p>
+                            Visualizamos un El Salvador donde el voluntariado sea un pilar de la sociedad, uniendo a personas, empresas y organizaciones para resolver los desafíos más urgentes y construir un país más justo, sostenible y solidario.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x350/f4ddb4/4a2512?text=Sobre+Nosotros" alt="Grupo de voluntarios sonriendo">
+                    </div>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fa-solid fa-users inclusion"></i>
+                        <h4>Inclusión</h4>
+                        <p>Creemos en un ecosistema abierto para todos, sin importar su origen, habilidades o experiencia.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-hand-holding-heart transparency"></i>
+                        <h4>Transparencia</h4>
+                        <p>Garantizamos que cada proyecto y organización en nuestra plataforma sea confiable y tenga un impacto real.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-medal excellence"></i>
+                        <h4>Excelencia</h4>
+                        <p>Nos esforzamos por ofrecer la mejor experiencia, desde la búsqueda hasta la participación en un proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>¿Listo para unirte?</h2>
+            <p>Únete a nuestra creciente comunidad de voluntarios y organizaciones para empezar a hacer una diferencia hoy.</p>
+            <div class="hero-buttons">
+                <a href="#" class="main-btn verde">Ser Voluntario</a>
+                <a href="#" class="main-btn amarillo">Crear Organización</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="col footer-brand">
+                    <div class="logo">V</div>
+                    <h2>Buen Samaritano</h2>
+                    <p>Conectamos personas con causas que les apasionan. Encuentra el voluntariado perfecto para ti y empieza a cambiar el mundo.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Oportunidades</h3>
+                    <ul>
+                        <li><a href="#">Educación</a></li>
+                        <li><a href="#">Medio Ambiente</a></li>
+                        <li><a href="#">Salud y Bienestar</a></li>
+                        <li><a href="#">Desarrollo Comunitario</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Suscripción</h3>
+                    <p>Recibe las últimas oportunidades de voluntariado en tu correo.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <small>© 2024 Buen Samaritano. Todos los derechos reservados.</small>
+                <div class="links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dropdown functionality
+            const dropdownBtn = document.querySelector('.dropdown-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            });
+
+            window.addEventListener('click', (e) => {
+                if (!e.target.matches('.dropdown-btn')) {
+                    if (dropdownContent.style.display === 'block') {
+                        dropdownContent.style.display = 'none';
+                    }
+                }
+            });
+
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Intersection Observer for nav buttons
+            const volunteerBtn = document.getElementById('volunteer-btn');
+            const organizationBtn = document.getElementById('organization-btn');
+            const heroButtons = document.querySelector('.hero-buttons');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.target === heroButtons) {
+                        if (entry.isIntersecting) {
+                            volunteerBtn.classList.remove('visible');
+                            organizationBtn.classList.remove('visible');
+                        } else {
+                            volunteerBtn.classList.add('visible');
+                            organizationBtn.classList.add('visible');
+                        }
+                    }
+                });
+            }, {
+                threshold: 0.1 // Adjust as needed
+            });
+
+            if (heroButtons) {
+                observer.observe(heroButtons);
+            }
+        });
+    </script>
+</body>
+</html>
